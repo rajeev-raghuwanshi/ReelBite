@@ -1,0 +1,47 @@
+/* Shared form styling for all auth forms */
+:root{
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --primary: #0b79d0;
+  --muted: #6b7280;
+  --error: #dc2626;
+}
+
+*{box-sizing:border-box}
+
+body,html,#root{height:100%;margin:0;padding:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+
+.form-page{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(180deg, var(--bg), #eef2ff);
+  padding:24px;
+}
+
+.auth-form{
+  width:100%;
+  max-width:440px;
+  background:var(--card);
+  padding:20px 22px;
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(11,25,39,0.08);
+}
+
+.auth-form h2{margin:0 0 16px 0;font-size:20px;color:#0f172a}
+
+.input-group{display:block;margin-bottom:14px}
+.input-group span{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.input-group input{width:100%;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+.input-group input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(11,121,208,0.06)}
+
+.actions{display:flex;gap:10px;align-items:center;margin-top:8px}
+.primary{flex:1;background:var(--primary);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+.link{background:transparent;border:none;color:var(--primary);cursor:pointer;padding:8px}
+.error{color:var(--error);font-size:12px;margin-top:6px;display:block}
+
+/* Responsive */
+@media (max-width:520px){
+  .auth-form{padding:16px;margin:0 6px}
+}

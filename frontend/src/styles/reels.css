@@ -1,0 +1,51 @@
+/* Scoped styles for Reels feed */
+.reels-container{
+  height:100vh;
+  width:100vw;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  background: black;
+}
+
+.reel-item{
+  height:100vh;
+  width:100vw;
+  position:relative;
+  scroll-snap-align: start;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:black;
+}
+
+.reel-video{
+  height:100vh;
+  width:100vw;
+  object-fit:cover;
+}
+
+.reel-overlay{
+  position:absolute;
+  left:0;right:0;top:0;bottom:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  pointer-events:none;
+}
+
+.reel-info{padding:20px;color:white;pointer-events:auto}
+.owner-name{margin:0;font-size:18px;text-shadow:0 2px 6px rgba(0,0,0,0.6)}
+
+.reel-actions{display:flex;justify-content:center;padding:24px;pointer-events:auto}
+.explore-btn{
+  background:rgba(255,255,255,0.12);
+  color:white;border:1px solid rgba(255,255,255,0.18);
+  padding:10px 16px;border-radius:999px;font-weight:600;cursor:pointer;
+}
+
+/* Make button more visible on small screens */
+@media (max-width:600px){
+  .owner-name{font-size:16px}
+  .explore-btn{padding:12px 18px;font-size:16px}
+}

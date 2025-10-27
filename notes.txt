@@ -1,0 +1,14 @@
+-------------- backend -------------------
+1) in app.js we will create the server and in server.js we will start the server 
+2) express cannot directly read the data from the request.body for that it need the middleware express.json
+3) to hash the passowrd we can use bcrpytjs
+4) we use token to save the info about the user and the token is saved in the cokkies, to create token we need json web token and to save that token we need cokkies parser dependinces 
+5) cokkie parse will be used as middleware in the app.js file $$$$$$$$$$$$$$$$$$$$$444
+6) by module.exports we can export only one file , i we try to export multiple , then the file which is exported at last will be exported
+7) to access the process.env we first have to install the dependince of dotenv and then require it in server js
+
+
+-------------------- to learn ------------------------------
+1) jwt token, session storage and how the jwt token works behind the seens
+2) dow file and why it is used in high end applications
+3) cors policy and how is it different from normal form submission 

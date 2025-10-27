@@ -1,0 +1,17 @@
+:root{
+  --muted: #6b7280;
+}
+.create-food-page{padding:18px}
+.create-food-form{max-width:720px;margin:0 auto;background:transparent}
+.form-title{font-size:1.4rem;margin-bottom:12px}
+.input-group{display:block;margin-bottom:12px}
+.input-group span{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+.input-group input[type="file"]{display:block}
+.input-group input[type="text"], .input-group textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef}
+.video-preview{margin:10px 0;border-radius:8px;overflow:hidden}
+.video-preview video{width:100%;height:auto;display:block}
+.actions{margin-top:12px}
+.error{color:#dc2626;margin-top:8px}
+@media (max-width:520px){
+  .create-food-form{padding:8px}
+}
